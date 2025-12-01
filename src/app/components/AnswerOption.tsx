@@ -74,14 +74,17 @@ const AnswerOption = React.memo(function AnswerOption({
     <button
       onClick={() => !showFeedback && onSelect(index)}
       disabled={showFeedback}
-      className={`group p-4 sm:p-6 rounded-2xl text-left transition-all duration-300 touch-manipulation ${
+      className={`group p-3 sm:p-4 lg:p-6 rounded-2xl text-left transition-all duration-300 touch-manipulation min-h-[56px] w-full ${
         !showFeedback ? 'hover:scale-[1.02] active:scale-[0.98] hover:shadow-lg' : 'cursor-not-allowed'
       } ${getRingClass()}`}
-      style={getButtonStyle()}
+      style={{
+        ...getButtonStyle(),
+        touchAction: 'manipulation',
+      }}
     >
       <div className="flex items-start">
         {/* Option Letter Circle */}
-        <div className={`flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 mr-4 flex items-center justify-center font-semibold text-sm sm:text-base transition-all duration-300 ${
+        <div className={`flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-full border-2 mr-3 sm:mr-4 flex items-center justify-center font-semibold text-xs sm:text-sm lg:text-base transition-all duration-300 ${
           showFeedback 
             ? isCorrectAnswer
               ? 'border-green-500 bg-green-500 text-white shadow-lg'
@@ -107,7 +110,7 @@ const AnswerOption = React.memo(function AnswerOption({
         
         {/* Option Text */}
         <div className="flex-1 pt-1">
-          <span className={`text-sm sm:text-base lg:text-lg leading-relaxed transition-colors duration-300 ${
+          <span className={`text-sm sm:text-base lg:text-lg leading-relaxed break-words transition-colors duration-300 ${
             showFeedback
               ? isCorrectAnswer
                 ? 'text-green-800 font-semibold'

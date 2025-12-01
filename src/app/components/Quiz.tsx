@@ -1128,10 +1128,10 @@ const Quiz = React.memo(function Quiz({ chapter, onBack }: QuizProps) {
       </div>
 
       {/* Question Content */}
-      <div className="flex-1 flex items-center justify-center p-4 sm:p-6 pt-6 lg:pt-6">
-        <div className="w-full max-w-4xl" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
+      <div className="flex-1 p-4 sm:p-6 pt-32 lg:pt-6">
+        <div className="w-full max-w-4xl mx-auto">
           <div 
-            className="rounded-3xl p-6 sm:p-8 lg:p-12"
+            className="rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-12 min-h-[60vh] sm:min-h-0"
             style={{
               background: 'rgba(255, 255, 255, 0.8)',
               backdropFilter: 'blur(20px)',
@@ -1143,14 +1143,14 @@ const Quiz = React.memo(function Quiz({ chapter, onBack }: QuizProps) {
             }}
           >
             {/* Question */}
-            <div className="mb-8">
-              <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-900 leading-relaxed">
+            <div className="mb-6 sm:mb-8">
+              <h2 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold text-gray-900 leading-relaxed break-words">
                 {questions[currentQuestion]?.question}
               </h2>
             </div>
 
             {/* Answer Options */}
-            <div className="grid grid-cols-1 gap-3 sm:gap-4 mb-8">
+            <div className="grid grid-cols-1 gap-3 sm:gap-4 mb-6 sm:mb-8">
               {questions[currentQuestion]?.options.map((option, index) => {
                 const letters = ['A', 'B', 'C', 'D'];
                 return (
@@ -1202,11 +1202,11 @@ const Quiz = React.memo(function Quiz({ chapter, onBack }: QuizProps) {
             )}
 
             {/* Navigation Buttons */}
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0 pt-4 border-t border-gray-200/50 sm:border-none sm:pt-0">
               <button
                 onClick={handlePrevious}
                 disabled={currentQuestion === 0 && !showFeedback}
-                className={`px-6 py-3 rounded-2xl font-medium transition-all duration-300 ${
+                className={`w-full sm:w-auto px-6 py-3 rounded-2xl font-medium transition-all duration-300 min-h-[48px] ${
                   (currentQuestion === 0 && !showFeedback)
                     ? 'opacity-50 cursor-not-allowed' 
                     : 'hover:scale-105 active:scale-95'
@@ -1224,7 +1224,7 @@ const Quiz = React.memo(function Quiz({ chapter, onBack }: QuizProps) {
               <button
                 onClick={handleNext}
                 disabled={selectedAnswer === null && !showFeedback}
-                className={`px-6 py-3 rounded-2xl font-medium transition-all duration-300 ${
+                className={`w-full sm:w-auto px-6 py-3 rounded-2xl font-medium transition-all duration-300 min-h-[48px] ${
                   (selectedAnswer === null && !showFeedback)
                     ? 'opacity-50 cursor-not-allowed' 
                     : 'hover:scale-105 active:scale-95'

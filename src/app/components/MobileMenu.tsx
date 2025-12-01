@@ -36,11 +36,11 @@ const MobileMenu = React.memo(function MobileMenu({
   return (
     <>
       {/* Mobile Header */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 z-50 p-4">
+      <div className="lg:hidden fixed top-0 left-0 right-0 z-50 p-3 sm:p-4" style={{ paddingTop: 'max(12px, env(safe-area-inset-top))' }}>
         <div 
-          className="flex items-center justify-between rounded-2xl px-4 py-3"
+          className="flex items-center justify-between rounded-2xl px-3 sm:px-4 py-2 sm:py-3"
           style={{
-            background: 'rgba(255, 255, 255, 0.9)',
+            background: 'rgba(255, 255, 255, 0.95)',
             backdropFilter: 'blur(20px)',
             border: '1px solid rgba(255, 255, 255, 0.3)',
             boxShadow: '0 4px 16px rgba(0, 0, 0, 0.1)',
@@ -95,9 +95,9 @@ const MobileMenu = React.memo(function MobileMenu({
 
       {/* Mobile Menu Dropdown */}
       {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-40 pt-24 p-4">
+        <div className="lg:hidden fixed inset-0 z-40 p-3 sm:p-4" style={{ paddingTop: 'calc(80px + env(safe-area-inset-top))' }}>
           <div 
-            className="mobile-menu rounded-2xl p-6 max-h-96 overflow-y-auto"
+            className="mobile-menu rounded-2xl p-4 sm:p-6 max-h-[70vh] overflow-y-auto"
             style={{
               background: 'rgba(255, 255, 255, 0.95)',
               backdropFilter: 'blur(20px)',
