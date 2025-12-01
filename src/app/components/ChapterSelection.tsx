@@ -4,6 +4,7 @@ import React from 'react';
 
 interface ChapterSelectionProps {
   onSelectChapter: (chapter: number) => void;
+  onReviewMode: () => void;
 }
 
 const chapters = [
@@ -15,7 +16,7 @@ const chapters = [
   { id: 60, title: "Chapter 60", description: "Global Climate Change - Coming soon!" },
 ];
 
-const ChapterSelection = React.memo(function ChapterSelection({ onSelectChapter }: ChapterSelectionProps) {
+const ChapterSelection = React.memo(function ChapterSelection({ onSelectChapter, onReviewMode }: ChapterSelectionProps) {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
       <div className="w-full max-w-4xl">
@@ -131,6 +132,43 @@ const ChapterSelection = React.memo(function ChapterSelection({ onSelectChapter 
             </button>
             );
           })}
+        </div>
+
+        {/* Review Answers Section */}
+        <div className="mt-12">
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center space-x-2 text-gray-600 mb-4">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+              </svg>
+              <span className="text-sm font-medium">Or review all questions and answers</span>
+            </div>
+          </div>
+          
+          <div className="flex justify-center">
+            <button
+              onClick={onReviewMode}
+              className="group px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:ring-offset-2"
+              style={{
+                background: 'linear-gradient(135deg, rgba(168, 85, 247, 0.8), rgba(147, 51, 234, 0.8))',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                boxShadow: `
+                  0 8px 32px rgba(168, 85, 247, 0.3),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.8)
+                `,
+              }}
+            >
+              <div className="flex items-center space-x-3">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span className="text-white font-semibold text-lg">Review Answers</span>
+                <div className="w-2 h-2 bg-yellow-300 rounded-full animate-pulse" />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -skew-x-12" style={{ left: '-100%', animation: 'shimmer 2s infinite' }} />
+            </button>
+          </div>
         </div>
 
         {/* Footer */}

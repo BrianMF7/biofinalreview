@@ -3,11 +3,13 @@
 import React, { useState, useCallback, Suspense } from 'react';
 import ChapterSelection from './components/ChapterSelection';
 import Quiz from './components/Quiz';
+import ReviewAnswers from './components/ReviewAnswers';
 import LoadingSpinner from './components/LoadingSpinner';
 import ErrorBoundary from './components/ErrorBoundary';
 
 export default function Home() {
   const [selectedChapter, setSelectedChapter] = useState<number | null>(null);
+  const [isReviewMode, setIsReviewMode] = useState(false);
 
   const handleSelectChapter = useCallback((chapter: number) => {
     setSelectedChapter(chapter);
@@ -15,6 +17,14 @@ export default function Home() {
 
   const handleBack = useCallback(() => {
     setSelectedChapter(null);
+  }, []);
+
+  const handleReviewMode = useCallback(() => {
+    setIsReviewMode(true);
+  }, []);
+
+  const handleBackFromReview = useCallback(() => {
+    setIsReviewMode(false);
   }, []);
 
   return (
@@ -34,13 +44,18 @@ export default function Home() {
               <LoadingSpinner size="lg" />
             </div>
           }>
-            {selectedChapter ? (
+            {isReviewMode ? (
+              <ReviewAnswers onBack={handleBackFromReview} />
+            ) : selectedChapter ? (
               <Quiz 
                 chapter={selectedChapter}
                 onBack={handleBack}
               />
             ) : (
-              <ChapterSelection onSelectChapter={handleSelectChapter} />
+              <ChapterSelection 
+                onSelectChapter={handleSelectChapter}
+                onReviewMode={handleReviewMode}
+              />
             )}
           </Suspense>
         </div>
