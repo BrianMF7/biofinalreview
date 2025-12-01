@@ -14,612 +14,282 @@ const ChapterReview = React.memo(function ChapterReview({ chapterNumber, onBack 
       case 54:
         return [
           {
-            question: "Which of the following organisms are considered ecosystem engineers?",
-            options: ["Wolves", "Beavers", "Eagles", "Deer"],
-            correct: 1
+            question: "Ecology:",
+            options: ["is the study of interactions among organisms and between organisms and their environment", "is the study of individual organisms", "is the study of genetics", "is the study of chemistry"],
+            correct: 0
           },
           {
-            question: "An ecologist studying the growth of plant populations compares the type and abundance of organisms that colonize them from prescribed burns (purposefully set, low-intensity fires) in the different areas along the change in elevation. What scale best describes her study?",
+            question: "A scientist is studying several areas along an elevation gradient. She compares the type and abundance of organisms that colonize them prescribed burns (purposefully set, low-intensity fires) in the different areas along the change in elevation. What scale best describes her study?",
             options: ["Population ecology", "Community ecology", "Ecosystem ecology", "Global ecology"],
             correct: 1
           },
           {
-            question: "Which of the following best describes the study of community ecology?",
-            options: ["The study of populations of organisms", "The study of how organisms interact with their physical environment", "The study of interactions between different species", "The study of individual organisms"],
+            question: "American Chestnut trees used to be one of the most common trees in the Eastern part of the United States. A fungus was introduced from another continent that sickened and killed nearly every chestnut tree in the country. An ecologist is trying to understand how certain trees resist the fungus, and how to get more fungus-resistant trees growing in the wild. This ecologist would be studying what type of ecology?",
+            options: ["Community ecology", "Population ecology", "Ecosystem ecology", "Global ecology"],
+            correct: 1
+          },
+          {
+            question: "You have been assigned to conduct a scientific study on the effects of four types of fertilizer on broccoli growth. You visit several broccoli farms to make observations and use these observations to find preliminary correlations and form hypotheses. To test your hypotheses, you set up five plots of broccoli—one plot for each fertilizer type plus a control plot, which is not fertilized. When you meet with your professor to discuss your progress, he tells you that your project is missing an important component of the scientific method. What is missing?",
+            options: ["Forming hypotheses", "Making observations", "Replicating each fertilizer treatment in multiple plots", "Having a control group"],
             correct: 2
           },
           {
-            question: "What is the primary difference between weather and climate?",
-            options: ["Weather refers to long-term patterns, climate refers to short-term conditions", "Weather refers to short-term conditions, climate refers to long-term patterns", "Weather and climate are the same thing", "Weather occurs on land, climate occurs in water"],
+            question: "Temperature is perhaps the most important factor in the distribution of organisms because:",
+            options: ["organisms prefer warm temperatures", "most organisms are unable to regulate their body temperature precisely", "temperature affects water availability", "temperature controls light levels"],
             correct: 1
           },
           {
-            question: "Which biome is characterized by permafrost?",
-            options: ["Temperate grassland", "Tropical rainforest", "Tundra", "Desert"],
-            correct: 2
-          },
-          {
-            question: "The benthic zone in aquatic ecosystems refers to:",
-            options: ["The surface water where photosynthesis occurs", "The bottom of the water body", "The area between high and low tides", "The open water area"],
+            question: "How do corals react when water temperatures are too high?",
+            options: ["They grow faster", "They expel their symbiotic algae", "They reproduce more", "They absorb more nutrients"],
             correct: 1
           },
           {
-            question: "Which of the following is NOT a major abiotic factor that determines the characteristics of terrestrial biomes?",
-            options: ["Temperature", "Precipitation", "Soil pH", "Predator density"],
-            correct: 3
-          },
-          {
-            question: "Coral reefs are primarily found in:",
-            options: ["Cold, deep ocean waters", "Warm, shallow ocean waters", "Freshwater lakes", "Arctic regions"],
+            question: "The serotinous cones of certain pine trees, such as the longleaf pine, Pinus palustris, depend on _______ to release their seeds:",
+            options: ["water", "fire", "wind", "animals"],
             correct: 1
           },
           {
-            question: "The aphotic zone in aquatic ecosystems is characterized by:",
-            options: ["High levels of photosynthesis", "No light penetration", "Floating organisms only", "High oxygen levels"],
+            question: "The photic zone in aquatic environments is typically about how deep?",
+            options: ["50 m", "100 m", "200 m", "500 m"],
             correct: 1
           },
           {
-            question: "Which of the following best describes the rain shadow effect?",
-            options: ["Increased precipitation on the windward side of mountains", "Decreased precipitation on the leeward side of mountains", "Equal precipitation on both sides of mountains", "Increased temperature on mountain slopes"],
+            question: "Why are red algae found in deeper oceanic waters?",
+            options: ["They prefer cold temperatures", "They possess pigments that allow them utilize blue-green-light", "They don't need sunlight", "They avoid predators"],
             correct: 1
           },
           {
-            question: "Estuaries are characterized by:",
-            options: ["Constant salinity levels", "Mixing of freshwater and saltwater", "Only marine organisms", "High temperature stability"],
+            question: "In arid terrestrial environments, salt can accumulate in the soil because of:",
+            options: ["high rainfall", "the settling and evaporation of water", "plant absorption", "wind erosion"],
             correct: 1
           },
           {
-            question: "The littoral zone in lakes refers to:",
-            options: ["The deepest part of the lake", "The open water area", "The shallow area near the shore", "The area with no oxygen"],
-            correct: 2
-          },
-          {
-            question: "Which biome has the highest primary productivity?",
-            options: ["Desert", "Tundra", "Tropical rainforest", "Temperate grassland"],
-            correct: 2
-          },
-          {
-            question: "Thermoregulation in organisms is primarily a response to:",
-            options: ["Light availability", "Temperature variation", "Water availability", "Soil nutrients"],
+            question: "In your biology lab, you are given a vial that contains fish urine. Your assignment is to predict whether the urine came from a fresh or saltwater species. You discover that the urine contains a high concentration of salts. What is your prediction for the fish's habitat? What is the concentration of solutes in the fish relative to its environment?",
+            options: ["Freshwater; hyperosmotic", "Marine; hypoosmotic", "Freshwater; hypoosmotic", "Marine; hyperosmotic"],
             correct: 1
           },
           {
-            question: "The turnover in temperate lakes occurs due to:",
-            options: ["Temperature changes affecting water density", "Wind patterns", "Fish migration", "Seasonal plant growth"],
-            correct: 0
-          },
-          {
-            question: "Which of the following is a characteristic of the pelagic zone?",
-            options: ["Bottom-dwelling organisms", "High light penetration throughout", "Open water environment", "Attached plant life"],
-            correct: 2
-          },
-          {
-            question: "Upwelling in oceans results in:",
-            options: ["Decreased nutrient availability", "Increased primary productivity", "Lower oxygen levels", "Warmer surface temperatures"],
+            question: "The optimal pH range for most freshwater fishes and invertebrates is:",
+            options: ["4–6", "6–9", "9–12", "1–4"],
             correct: 1
           },
           {
-            question: "The taiga biome is also known as:",
-            options: ["Temperate deciduous forest", "Boreal forest", "Chaparral", "Savanna"],
+            question: "The sea heats and cools:",
+            options: ["faster than the land", "more slowly than the land", "at the same rate as land", "independently of land"],
             correct: 1
           },
           {
-            question: "Which factor most influences the distribution of vegetation in terrestrial biomes?",
-            options: ["Altitude", "Latitude", "Longitude", "Ocean currents"],
+            question: "The global patterns of atmospheric circulation and precipitation occur because of:",
+            options: ["ocean currents", "rising masses of warm air and sinking masses of cool air", "mountain ranges", "vegetation patterns"],
             correct: 1
           },
           {
-            question: "Microclimate refers to:",
-            options: ["Global weather patterns", "Climate conditions in a very small area", "Seasonal weather changes", "Ocean temperature patterns"],
+            question: "What is adiabatic cooling?",
+            options: ["cooling due to wind", "cooling due to the decrease in air pressure at higher elevations", "cooling due to water evaporation", "cooling due to shade"],
             correct: 1
           },
           {
-            question: "The intertidal zone is characterized by:",
-            options: ["Constant submersion in water", "Constant exposure to air", "Regular exposure to both air and water", "Only freshwater organisms"],
-            correct: 2
-          },
-          {
-            question: "Which of the following adaptations is most common in desert organisms?",
-            options: ["Large body size", "Water conservation mechanisms", "Thick fur", "Bright coloration"],
+            question: "Currents in the ocean basins of the Northern Hemisphere always run in what direction?",
+            options: ["counterclockwise", "clockwise", "north to south", "east to west"],
             correct: 1
           },
           {
-            question: "The greenhouse effect in Earth's atmosphere is caused by:",
-            options: ["Oxygen and nitrogen", "Carbon dioxide and water vapor", "Helium and hydrogen", "Methane only"],
+            question: "Most of Europe is in the _______ biome:",
+            options: ["boreal forest", "temperate deciduous forest", "grassland", "mediterranean"],
             correct: 1
           },
           {
-            question: "Which biome is characterized by drought-resistant shrubs and mild, wet winters?",
-            options: ["Desert", "Chaparral", "Tundra", "Boreal forest"],
+            question: "Chaparral is:",
+            options: ["a type of forest", "a type of shrubland/grassland", "a type of desert", "a type of wetland"],
             correct: 1
           },
           {
-            question: "Oligotrophic lakes are characterized by:",
-            options: ["High nutrient levels", "Low oxygen levels", "High algae growth", "Low nutrient levels"],
-            correct: 3
-          },
-          {
-            question: "The study of how organisms interact with their environment is called:",
-            options: ["Evolution", "Ecology", "Taxonomy", "Physiology"],
+            question: "You awaken to find yourself lying on the bare ground, dirty and injured. In the dim light, you can make out wreckage around you and surmise that you have survived a plane crash. Over the next few days, you wander the hot, humid area and find an amazing number of different plant and insect species. You are able to trap and eat several rodent size mammals, but do not see any larger mammals. Into what biome did your plane crash?",
+            options: ["Temperate forest", "Tropical rain forest", "Savanna", "Desert"],
             correct: 1
           },
           {
-            question: "Which of the following is an example of a biotic factor?",
-            options: ["Temperature", "Rainfall", "Soil pH", "Competition between species"],
-            correct: 3
-          },
-          {
-            question: "The zone in the ocean where photosynthesis can occur is called:",
-            options: ["Benthic zone", "Abyssal zone", "Photic zone", "Bathyal zone"],
-            correct: 2
-          },
-          {
-            question: "Seasonal changes in temperate regions are primarily caused by:",
-            options: ["Distance from the ocean", "Earth's tilt on its axis", "Elevation changes", "Wind patterns"],
+            question: "How would you best explain the existence of a mountain range that has abundant conifer trees, ferns, and mosses on the east side, but only sparse shrubby plants on the west side?",
+            options: ["Temperature differences", "Precipitation differences due to a rain shadow on the west side produce the differing plant communities", "Soil differences", "Altitude differences"],
             correct: 1
           },
           {
-            question: "Which of the following statements about tropical rainforests is correct?",
-            options: ["They have nutrient-rich soils", "They have low biodiversity", "They have rapid nutrient cycling", "They experience significant temperature variation"],
-            correct: 2
-          }
-        ];
-      case 55:
-        return [
-          {
-            question: "Which of the following best describes innate behavior?",
-            options: ["Behavior that is learned through experience", "Behavior that is genetically programmed", "Behavior that changes with age", "Behavior that requires practice"],
+            question: "Lakes with elevated dissolved nutrients and low water clarity are called:",
+            options: ["oligotrophic", "eutrophic", "mesotrophic", "dystrophic"],
             correct: 1
           },
           {
-            question: "Imprinting typically occurs during:",
-            options: ["Adulthood", "A critical period early in life", "Old age", "Any time in life equally"],
+            question: "Which of the following is a characteristic of tundra?",
+            options: ["high temperatures", "permafrost", "abundant trees", "high precipitation"],
             correct: 1
           },
           {
-            question: "A fixed action pattern is:",
-            options: ["A learned sequence of behaviors", "A stereotyped behavioral sequence", "A behavior that varies greatly", "A behavior only seen in captivity"],
+            question: "The Earth is spherical, which causes differences in the intensity of solar radiation at different latitudes. The Earth is also tilted on its axis at a 23.5° angle. How do you think this tilt affects the intensity of solar radiation?",
+            options: ["It has no effect", "The sun's rays strike the Northern hemisphere more obliquely during its winter months and less obliquely during its summer months", "It only affects the Southern hemisphere", "It makes all seasons the same"],
             correct: 1
           },
           {
-            question: "Which of the following is an example of associative learning?",
-            options: ["Habituation", "Classical conditioning", "Imprinting", "Fixed action patterns"],
-            correct: 1
-          },
-          {
-            question: "Altruistic behavior in animals is best explained by:",
-            options: ["Individual fitness benefits", "Kin selection", "Random chance", "Environmental pressure"],
-            correct: 1
-          },
-          {
-            question: "Territorial behavior in animals primarily functions to:",
-            options: ["Attract mates only", "Secure resources", "Increase population size", "Reduce genetic diversity"],
-            correct: 1
-          },
-          {
-            question: "The waggle dance of honeybees communicates information about:",
-            options: ["Danger in the hive", "Location of food sources", "Mating opportunities", "Weather conditions"],
-            correct: 1
-          },
-          {
-            question: "Optimal foraging theory predicts that animals will:",
-            options: ["Always eat the largest prey", "Maximize energy gained per unit time spent foraging", "Eat only one type of food", "Forage randomly"],
-            correct: 1
-          },
-          {
-            question: "Sexual selection can result in:",
-            options: ["Traits that reduce survival", "Only benefits to females", "Reduced reproductive success", "Identical males and females"],
-            correct: 0
-          },
-          {
-            question: "Migration in animals is primarily controlled by:",
-            options: ["Daily weather changes", "Circadian rhythms", "Circannual rhythms", "Social interactions only"],
-            correct: 2
-          },
-          {
-            question: "Which of the following is NOT a component of animal communication?",
-            options: ["Signal", "Receiver", "Response", "Photosynthesis"],
-            correct: 3
-          },
-          {
-            question: "Reciprocal altruism occurs when:",
-            options: ["Animals help relatives only", "Animals help others expecting future benefits", "Animals always act selfishly", "Animals help randomly"],
-            correct: 1
-          },
-          {
-            question: "The study of animal behavior is called:",
-            options: ["Ethology", "Ecology", "Evolution", "Embryology"],
-            correct: 0
-          },
-          {
-            question: "Habituation is:",
-            options: ["Learning to respond to a stimulus", "Learning to ignore a repeated harmless stimulus", "Learning through trial and error", "Learning through imitation"],
-            correct: 1
-          },
-          {
-            question: "Courtship behaviors primarily function to:",
-            options: ["Find food", "Establish territory", "Attract mates and ensure species recognition", "Build nests"],
-            correct: 2
-          },
-          {
-            question: "Hamilton's rule states that altruistic behavior will be selected for when:",
-            options: ["rB > C", "rB < C", "rB = C", "B > rC"],
-            correct: 0
-          },
-          {
-            question: "Which type of learning involves trial and error?",
-            options: ["Classical conditioning", "Imprinting", "Operant conditioning", "Habituation"],
-            correct: 2
-          },
-          {
-            question: "Pheromones are primarily used for:",
-            options: ["Thermoregulation", "Chemical communication", "Digestion", "Photosynthesis"],
-            correct: 1
-          },
-          {
-            question: "Inclusive fitness refers to:",
-            options: ["Only an individual's reproductive success", "An individual's genetic contribution to future generations through offspring and relatives", "Physical strength", "Longevity"],
-            correct: 1
-          },
-          {
-            question: "Which of the following is an example of innate behavior?",
-            options: ["A bird learning to sing", "A dog learning to sit", "A baby turtle heading to the ocean after hatching", "A monkey using tools"],
-            correct: 2
-          },
-          {
-            question: "Cognitive learning involves:",
-            options: ["Simple stimulus-response patterns", "Complex problem solving and reasoning", "Only genetic programming", "Automatic responses"],
-            correct: 1
-          },
-          {
-            question: "The concept of a supernormal stimulus means:",
-            options: ["A normal environmental trigger", "An exaggerated stimulus that triggers stronger responses than natural stimuli", "A weak stimulus", "No stimulus at all"],
-            correct: 1
-          },
-          {
-            question: "Cooperative breeding occurs when:",
-            options: ["All individuals breed simultaneously", "Non-breeding individuals help care for offspring", "Animals breed in isolation", "Only the strongest individuals breed"],
-            correct: 1
-          },
-          {
-            question: "Circadian rhythms are primarily controlled by:",
-            options: ["Food availability", "Social interactions", "Light-dark cycles", "Temperature only"],
-            correct: 2
-          },
-          {
-            question: "Which of the following best describes the difference between proximate and ultimate causes of behavior?",
-            options: ["Proximate causes are evolutionary, ultimate causes are immediate", "Proximate causes are immediate mechanisms, ultimate causes are evolutionary explanations", "They are the same thing", "Only proximate causes are important"],
-            correct: 1
-          },
-          {
-            question: "Sexual dimorphism is typically the result of:",
-            options: ["Identical selection pressures on males and females", "Different selection pressures on males and females", "Random genetic drift", "Environmental pollution"],
-            correct: 1
-          },
-          {
-            question: "Which of the following is true about game theory in behavioral ecology?",
-            options: ["It only applies to games animals play", "It analyzes behavioral strategies in competitive situations", "It's not relevant to biology", "It only applies to humans"],
-            correct: 1
-          },
-          {
-            question: "Parent-offspring conflict occurs because:",
-            options: ["Parents and offspring share identical interests", "Parents and offspring have different optimal strategies", "Offspring are always selfish", "Parents are always altruistic"],
-            correct: 1
-          },
-          {
-            question: "The evolutionarily stable strategy (ESS) is:",
-            options: ["A strategy that never changes", "A strategy that cannot be invaded by alternative strategies", "Always the most aggressive strategy", "Random behavior"],
-            correct: 1
-          },
-          {
-            question: "Kin selection explains:",
-            options: ["Why animals are always selfish", "Why animals may help relatives at a cost to themselves", "Why animals migrate", "Why animals compete for food"],
+            question: "The world can be divided approximately into six major biogeographic regions. Which of these is an accurate description of the properties of those regions?",
+            options: ["All species exist in all regions", "Any single species rarely exists in more than one biogeographic region", "Regions have identical climates", "Regions are defined by political boundaries"],
             correct: 1
           }
         ];
       case 56:
         return [
           {
-            question: "Population density is defined as:",
-            options: ["The number of births per year", "The number of individuals per unit area", "The growth rate of a population", "The age structure of a population"],
+            question: "A group of interbreeding individuals occupying the same habitat at the same time is a(n):",
+            options: ["community", "population", "ecosystem", "species"],
             correct: 1
           },
           {
-            question: "Which of the following factors would NOT directly affect population growth rate?",
-            options: ["Birth rate", "Death rate", "Immigration", "Genetic diversity"],
-            correct: 3
-          },
-          {
-            question: "The exponential growth model assumes:",
-            options: ["Limited resources", "Constant growth rate", "Increasing death rate", "Decreasing birth rate"],
+            question: "You find a notebook that has lots of equations, tables, and graphs in it. The tables have columns for the number of female offspring born over a year, the number of deaths over a year, and the number of individuals in various age classes. What subject do you think the owner of the notebook is studying? What type of tables are they most likely using?",
+            options: ["ecology; data tables", "demography; life tables", "genetics; punnett squares", "physiology; growth charts"],
             correct: 1
           },
           {
-            question: "Carrying capacity (K) represents:",
-            options: ["The maximum growth rate", "The maximum population size an environment can sustain", "The minimum population size", "The birth rate minus death rate"],
+            question: "What is the simplest method to measure population density in a given area?",
+            options: ["Use mark-recapture methods", "Count the number of organisms", "Measure biomass", "Use statistical sampling"],
             correct: 1
           },
           {
-            question: "In the logistic growth model, population growth rate is highest when:",
-            options: ["N = 0", "N = K", "N = K/2", "N > K"],
-            correct: 2
-          },
-          {
-            question: "Density-dependent factors include:",
-            options: ["Natural disasters", "Weather", "Competition for resources", "Volcanic eruptions"],
-            correct: 2
-          },
-          {
-            question: "A Type I survivorship curve is characterized by:",
-            options: ["High mortality early in life", "Constant mortality throughout life", "High mortality late in life", "No mortality"],
-            correct: 2
-          },
-          {
-            question: "Which of the following is a density-independent factor?",
-            options: ["Competition", "Predation", "Disease", "Hurricane"],
-            correct: 3
-          },
-          {
-            question: "The intrinsic rate of increase (r) is:",
-            options: ["Always positive", "The maximum per capita growth rate", "Independent of population size", "The same for all species"],
+            question: "A line transect would probably be the preferred method to quantify the population density of:",
+            options: ["fish in a lake", "Ponderosa pine trees", "insects in soil", "bacteria in culture"],
             correct: 1
           },
           {
-            question: "A population with a broad-based age pyramid has:",
-            options: ["More older individuals", "More younger individuals", "Equal age distribution", "Declining birth rate"],
+            question: "A mark-recapture program marked 10 individuals in the first catch. The second catch has a total of 8 individuals, 4 of which were recaptures. What is the estimate of total population size?",
+            options: ["16", "20", "24", "32"],
             correct: 1
           },
           {
-            question: "Metapopulations consist of:",
-            options: ["One large continuous population", "Several connected subpopulations", "Only extinct populations", "Populations of different species"],
+            question: "A good sampling method for quantifying the density of birds or bats is the use of:",
+            options: ["line transects", "mist nets", "quadrat sampling", "camera traps"],
             correct: 1
           },
           {
-            question: "The demographic transition is characterized by:",
-            options: ["High birth and death rates", "Low birth and death rates", "A shift from high to low birth and death rates", "Constant population size"],
-            correct: 2
-          },
-          {
-            question: "Which reproductive strategy is associated with r-selected species?",
-            options: ["Few offspring, high parental care", "Many offspring, low parental care", "Long lifespan", "Large body size"],
+            question: "Dispersion is:",
+            options: ["the movement of individuals between populations", "the spatial distribution of individuals", "the reproductive rate of a population", "the density of a population"],
             correct: 1
           },
           {
-            question: "K-selected species typically have:",
-            options: ["High reproductive rates", "Short lifespans", "High competitive ability", "Small body size"],
-            correct: 2
-          },
-          {
-            question: "Population bottlenecks result in:",
-            options: ["Increased genetic diversity", "Reduced genetic diversity", "No change in genetic diversity", "Only beneficial mutations"],
+            question: "Many species of birds form large flocks. What dispersion pattern describes this behavior?",
+            options: ["uniform", "clumped", "random", "territorial"],
             correct: 1
           },
           {
-            question: "The founder effect occurs when:",
-            options: ["A population grows rapidly", "A small group establishes a new population", "A population becomes extinct", "Resources become unlimited"],
+            question: "Why is a random dispersal pattern quite rare in nature?",
+            options: ["Animals prefer to be near others", "Because resources in nature are rarely randomly spaced", "Predators prevent random distribution", "Weather patterns influence distribution"],
             correct: 1
           },
           {
-            question: "Which of the following best describes a source population?",
-            options: ["A population that is declining", "A population where births exceed deaths", "A population dependent on immigration", "An extinct population"],
-            correct: 1
-          },
-          {
-            question: "Sink populations are characterized by:",
-            options: ["High birth rates", "Immigration exceeding emigration", "Deaths exceeding births", "Stable population size"],
-            correct: 2
-          },
-          {
-            question: "The Allee effect describes:",
-            options: ["Exponential population growth", "Reduced fitness at low population densities", "Increased fitness at high densities", "Constant fitness regardless of density"],
-            correct: 1
-          },
-          {
-            question: "Life tables provide information about:",
-            options: ["Only birth rates", "Only death rates", "Age-specific mortality and reproduction", "Migration patterns"],
-            correct: 2
-          },
-          {
-            question: "Which age structure indicates a growing population?",
-            options: ["Column-shaped", "Urn-shaped", "Pyramid-shaped", "Diamond-shaped"],
-            correct: 2
-          },
-          {
-            question: "The term 'ecology' was first coined by:",
-            options: ["Charles Darwin", "Ernst Haeckel", "Alfred Wallace", "Gregor Mendel"],
-            correct: 1
-          },
-          {
-            question: "Population viability analysis helps determine:",
-            options: ["Optimal harvesting rates", "Extinction probability", "Migration routes", "Feeding behaviors"],
-            correct: 1
-          },
-          {
-            question: "Which factor is most important for small population persistence?",
-            options: ["Large territory", "High genetic diversity", "Fast reproduction", "Strong competition"],
-            correct: 1
-          },
-          {
-            question: "Dispersal in populations primarily functions to:",
-            options: ["Find food only", "Avoid inbreeding and find new habitats", "Establish dominance", "Synchronize breeding"],
-            correct: 1
-          },
-          {
-            question: "The minimum viable population size is:",
-            options: ["Always 50 individuals", "The smallest population that can persist long-term", "The carrying capacity", "The maximum population size"],
-            correct: 1
-          },
-          {
-            question: "Exponential growth is represented by the equation:",
-            options: ["dN/dt = rN", "dN/dt = rN(K-N)/K", "N = K", "dN/dt = K"],
-            correct: 0
-          },
-          {
-            question: "Environmental resistance includes:",
-            options: ["Only biotic factors", "Only abiotic factors", "Both biotic and abiotic limiting factors", "Only positive factors"],
-            correct: 2
-          },
-          {
-            question: "Which survivorship curve is typical of most birds?",
-            options: ["Type I", "Type II", "Type III", "Type IV"],
-            correct: 1
-          },
-          {
-            question: "Population momentum refers to:",
-            options: ["How fast populations move", "Continued growth due to age structure", "Population decline", "Migration speed"],
+            question: "Lions, leopards, and other large terrestrial predators generally maintain well-defined territories. What kind of dispersion pattern would you expect this to produce?",
+            options: ["clumped", "uniform", "random", "clustered"],
             correct: 1
           }
         ];
       case 57:
         return [
           {
-            question: "A community in ecology refers to:",
-            options: ["All organisms in a specific area", "All individuals of one species", "All interacting populations in an area", "Only plant species in an area"],
+            question: "What is an example of a +/− interaction?",
+            options: ["mutualism", "predation", "commensalism", "competition"],
+            correct: 1
+          },
+          {
+            question: "What is an example of a +/+ interaction?",
+            options: ["predation", "mutualism", "parasitism", "competition"],
+            correct: 1
+          },
+          {
+            question: "The relationship of disease-causing organisms to an infected rabbit is one of:",
+            options: ["mutualism", "commensalism", "parasitism", "predation"],
             correct: 2
           },
           {
-            question: "The competitive exclusion principle states that:",
-            options: ["Two species can coexist indefinitely", "Two species with identical niches cannot coexist", "Competition always benefits both species", "Only the largest species survives"],
+            question: "What situation below is best characterized as interference competition?",
+            options: ["Birds eating from the same food source", "A tiger that excludes other tigers from its territory", "Plants growing in the same soil", "Fish feeding on plankton"],
             correct: 1
           },
           {
-            question: "Resource partitioning allows species to:",
-            options: ["Compete more intensively", "Coexist by using different resources", "Eliminate competitors", "Use identical resources"],
+            question: "Competition among individuals of different species is called:",
+            options: ["intraspecific competition", "interspecific competition", "interference competition", "exploitation competition"],
             correct: 1
           },
           {
-            question: "A fundamental niche represents:",
-            options: ["Where a species actually lives", "The full range of conditions a species can tolerate", "Only the feeding habits of a species", "The smallest area a species needs"],
+            question: "Allelopathy is:",
+            options: ["a type of mutualism", "a type of competition between plant species through chemicals", "a form of predation", "a defensive mechanism"],
             correct: 1
           },
           {
-            question: "Character displacement refers to:",
-            options: ["Species becoming more similar", "Evolution of differences where species overlap", "Species migration", "Extinction of species"],
+            question: "Caterpillars of the same species on a large leaf each chew as much leaf as they can:",
+            options: ["interference competition", "exploitation competition", "interspecific competition", "allelopathy"],
             correct: 1
           },
           {
-            question: "Which of the following is an example of mutualism?",
-            options: ["Predator-prey relationship", "Tapeworm in host", "Bees pollinating flowers", "Competition for food"],
+            question: "In competition between P. caudatum and P. bursaria, neither species goes extinct because they utilize different resources. This can be considered as evidence for:",
+            options: ["competitive exclusion", "resource partitioning", "character displacement", "interference competition"],
+            correct: 1
+          },
+          {
+            question: "You are studying the feeding habits of a group of four closely related bird species. You observe that all four species feed on insects. However, you notice that the species do not feed at the same time of day: one species feeds most actively at dawn, another during the middle of the day, another at dusk, and the last species feeds at night. What term would you use to describe this behavior?",
+            options: ["competitive exclusion", "resource partitioning", "character displacement", "temporal isolation"],
+            correct: 1
+          },
+          {
+            question: "Sympatric species:",
+            options: ["are less likely to compete than allopatric species", "are more likely than allopatric species to display character displacement", "never show character displacement", "always go extinct"],
+            correct: 1
+          }
+        ];
+      case 58:
+        return [
+          {
+            question: "Community ecology is best defined as the study of:",
+            options: ["individual species behavior", "population dynamics", "how groups of species interact in the same place at the same time", "ecosystem energy flow"],
             correct: 2
           },
           {
-            question: "In a predator-prey relationship, an increase in prey population typically leads to:",
-            options: ["Decrease in predator population", "Increase in predator population", "No change in predator population", "Extinction of predators"],
+            question: "What is the general global pattern of species richness?",
+            options: ["Decreasing from polar areas toward the tropics", "Increasing from polar areas toward the tropics", "Uniform across all latitudes", "Highest at mid-latitudes"],
             correct: 1
           },
           {
-            question: "Keystone species are important because they:",
-            options: ["Are the most abundant", "Are the largest species", "Have disproportionate effects on community structure", "Are always predators"],
+            question: "If you (incorrectly) proposed that tundra, the world's largest land biome, contains high species richness, your proposal would be consistent with the:",
+            options: ["latitudinal gradient hypothesis", "species-area hypothesis", "intermediate disturbance hypothesis", "productivity hypothesis"],
+            correct: 1
+          },
+          {
+            question: "Based on what you know about various species richness hypotheses, a large, tropical area would likely have _______ species richness:",
+            options: ["low", "high", "moderate", "variable"],
+            correct: 1
+          },
+          {
+            question: "What is the most accurate statement about temporal variability of plant biomass of a community?",
+            options: ["It increases as species diversity increases", "It decreases as species diversity increases", "It is unrelated to species diversity", "It remains constant regardless of diversity"],
+            correct: 1
+          },
+          {
+            question: "What is an area of the Earth's surface currently undergoing primary succession?",
+            options: ["Abandoned farmland", "Forest after wildfire", "Volcanoes in Iceland", "Pond becoming meadow"],
             correct: 2
           },
           {
-            question: "Primary succession occurs:",
-            options: ["After a forest fire", "On bare rock or new land", "After agricultural abandonment", "In existing communities"],
+            question: "No matter what model is used to show community succession, the final stage is always:",
+            options: ["a pioneer community", "a climax community", "a transitional community", "a disturbed community"],
             correct: 1
           },
           {
-            question: "The intermediate disturbance hypothesis suggests that:",
-            options: ["No disturbance is best for diversity", "Extreme disturbance maximizes diversity", "Moderate disturbance maximizes diversity", "Disturbance always reduces diversity"],
-            correct: 2
-          },
-          {
-            question: "Which of the following best describes commensalism?",
-            options: ["Both species benefit", "One benefits, one is harmed", "One benefits, one is unaffected", "Both species are harmed"],
-            correct: 2
-          },
-          {
-            question: "Trophic cascades occur when:",
-            options: ["Plants affect herbivores only", "Changes in top predators affect lower trophic levels", "Only herbivores are involved", "There are no predators"],
+            question: "In succession, the ability of one species to make the area more suitable for another species is called:",
+            options: ["inhibition", "facilitation", "tolerance", "competition"],
             correct: 1
           },
           {
-            question: "The species-area relationship shows that:",
-            options: ["Larger areas have fewer species", "Area doesn't affect species number", "Larger areas generally have more species", "Only small areas have species"],
-            correct: 2
-          },
-          {
-            question: "Edge effects in fragmented habitats typically result in:",
-            options: ["Increased interior conditions", "Changed microclimatic conditions", "No environmental changes", "Larger habitat patches"],
+            question: "The Shannon diversity index would be most valuable to:",
+            options: ["a population geneticist studying mutations", "a conservation biologist deciding where to locate a new nature preserve", "a physiologist studying metabolism", "a molecular biologist studying DNA"],
             correct: 1
           },
           {
-            question: "Coevolution occurs when:",
-            options: ["Species evolve independently", "Two species evolve in response to each other", "Only one species evolves", "Evolution stops"],
-            correct: 1
-          },
-          {
-            question: "The Shannon diversity index measures:",
-            options: ["Only species richness", "Only species evenness", "Both species richness and evenness", "Population size"],
-            correct: 2
-          },
-          {
-            question: "Climax communities are characterized by:",
-            options: ["Rapid species turnover", "High stability and low change", "Only pioneer species", "Constant disturbance"],
-            correct: 1
-          },
-          {
-            question: "Which type of mimicry involves a harmless species resembling a harmful one?",
-            options: ["Müllerian mimicry", "Batesian mimicry", "Aggressive mimicry", "Protective mimicry"],
-            correct: 1
-          },
-          {
-            question: "Apparent competition occurs when:",
-            options: ["Species directly compete for resources", "Species share a common predator", "Species ignore each other", "Species cooperate"],
-            correct: 1
-          },
-          {
-            question: "The term 'guild' in community ecology refers to:",
-            options: ["All species in a community", "Species that use resources similarly", "Only predatory species", "Plant species only"],
-            correct: 1
-          },
-          {
-            question: "Bottom-up control in communities is driven by:",
-            options: ["Predators", "Resource availability", "Competition", "Disease"],
-            correct: 1
-          },
-          {
-            question: "Top-down control in communities is driven by:",
-            options: ["Resource availability", "Predation", "Plant growth", "Soil nutrients"],
-            correct: 1
-          },
-          {
-            question: "Facilitation in ecological succession means:",
-            options: ["Early species inhibit later ones", "Early species help establish later ones", "All species arrive simultaneously", "No species interactions occur"],
-            correct: 1
-          },
-          {
-            question: "The tolerance model of succession suggests that:",
-            options: ["Early species are required for later ones", "Early species inhibit later ones", "Later species can establish independently", "Succession doesn't occur"],
-            correct: 2
-          },
-          {
-            question: "Invasive species often succeed because they:",
-            options: ["Are always larger", "Lack natural enemies", "Are always native", "Cannot reproduce"],
-            correct: 1
-          },
-          {
-            question: "The paradox of the plankton refers to:",
-            options: ["Lack of plankton diversity", "High diversity despite limited resources", "Plankton extinction", "Plankton predation"],
-            correct: 1
-          },
-          {
-            question: "Metacommunities consist of:",
-            options: ["One large community", "Connected local communities", "Only extinct communities", "Unconnected communities"],
-            correct: 1
-          },
-          {
-            question: "Alpha diversity refers to:",
-            options: ["Diversity between communities", "Diversity within a community", "Regional diversity", "Global diversity"],
-            correct: 1
-          },
-          {
-            question: "Beta diversity refers to:",
-            options: ["Diversity within a community", "Diversity between communities", "Species abundance", "Population size"],
-            correct: 1
-          },
-          {
-            question: "Which factor most influences community structure in intertidal zones?",
-            options: ["Temperature only", "Tidal exposure and wave action", "Soil pH", "Air pressure"],
+            question: "The moraines left when glaciers retreat are characterized by:",
+            options: ["high nitrogen content and rich organic matter", "low nitrogen content and little organic matter", "moderate nitrogen content", "variable nutrient content"],
             correct: 1
           }
         ];
