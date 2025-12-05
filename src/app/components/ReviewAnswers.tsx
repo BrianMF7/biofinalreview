@@ -15,8 +15,8 @@ const ReviewAnswers = React.memo(function ReviewAnswers({ onBack }: ReviewAnswer
     { id: 56, title: 'Population Ecology', available: true },
     { id: 57, title: 'Community Ecology', available: true },
     { id: 58, title: 'Ecosystems and Restoration Ecology', available: true },
-    { id: 59, title: 'Conservation Biology and Global Change', available: false },
-    { id: 60, title: 'Global Climate Change', available: false },
+    { id: 59, title: 'Conservation Biology and Global Change', available: true },
+    { id: 60, title: 'Biodiversity and Conservation Biology', available: true },
   ];
 
   if (selectedChapter !== null) {

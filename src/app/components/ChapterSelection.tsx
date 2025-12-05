@@ -12,8 +12,8 @@ const chapters = [
   { id: 56, title: "Chapter 56", description: "Population Ecology - Demographics and growth patterns" },
   { id: 57, title: "Chapter 57", description: "Species Interactions - Competition, predation, and mutualism" },
   { id: 58, title: "Chapter 58", description: "Community & Ecosystem Ecology - Succession and energy flow" },
-  { id: 59, title: "Chapter 59", description: "Conservation Biology - Coming soon!" },
-  { id: 60, title: "Chapter 60", description: "Global Climate Change - Coming soon!" },
+  { id: 59, title: "Chapter 59", description: "Conservation Biology - Population growth and global change" },
+  { id: 60, title: "Chapter 60", description: "Biodiversity and Conservation Biology - Species diversity and conservation strategies" },
 ];
 
 const ChapterSelection = React.memo(function ChapterSelection({ onSelectChapter, onReviewMode }: ChapterSelectionProps) {
@@ -33,7 +33,7 @@ const ChapterSelection = React.memo(function ChapterSelection({ onSelectChapter,
         {/* Chapter Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {chapters.map((chapter, index) => {
-            const isComingSoon = chapter.id === 59 || chapter.id === 60;
+            const isComingSoon = false; // All chapters now available
             return (
             <button
               key={chapter.id}
