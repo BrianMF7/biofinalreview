@@ -961,6 +961,42 @@ const Quiz = React.memo(function Quiz({ chapter, onBack }: QuizProps) {
     setIsAnswerCorrect(false);
   };
 
+  // Keyboard navigation
+  React.useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      // Don't handle keyboard if showing result or coming soon
+      if (showResult || isComingSoon) return;
+
+      // Number keys 1-4 to select answers
+      if (e.key >= '1' && e.key <= '4') {
+        const answerIndex = parseInt(e.key) - 1;
+        if (answerIndex < questions[currentQuestion]?.options.length) {
+          handleAnswerSelect(answerIndex);
+        }
+      }
+      // Enter key to submit/continue
+      else if (e.key === 'Enter') {
+        if (selectedAnswer !== null || showFeedback) {
+          handleNext();
+        }
+      }
+      // Arrow keys for navigation
+      else if (e.key === 'ArrowLeft') {
+        if (currentQuestion > 0 || showFeedback) {
+          handlePrevious();
+        }
+      }
+      else if (e.key === 'ArrowRight') {
+        if (selectedAnswer !== null || showFeedback) {
+          handleNext();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [currentQuestion, selectedAnswer, showFeedback, showResult, isComingSoon, questions, handleAnswerSelect]);
+
   // Coming Soon page for chapters 59 and 60
   if (isComingSoon) {
     return (
